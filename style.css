@@ -25,6 +25,14 @@
 ::-webkit-scrollbar {
   display: none;
 }
+::selection {
+  background: var(--main-color);
+  color: var(--text-color);
+}
+
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   display: flex;
@@ -35,7 +43,7 @@ body {
 
 #navbar-section {
   height: 40px;
-  width: 100vw;
+  width: 100%;
   box-shadow: var(--main-color) 0px -12px 20px;
   position: fixed;
   z-index: 999;
@@ -163,10 +171,9 @@ nav ul li.active {
 
 #about-me-section {
   text-align: center;
-  padding: 20px 0;
   margin-bottom: 10vh;
   display: flex;
-  padding: 5vh 10vw;
+  padding: 20vh 10vw 0 10vw;
   justify-content: center;
   align-items: center;
 }
@@ -195,6 +202,10 @@ nav ul li.active {
   height: 100%;
 }
 
+.about-me-img-mobile{
+  display: none;
+}
+
 #about-me-section .about-me-para {
   text-align: justify;
   color: var(--text-color);
@@ -207,7 +218,7 @@ nav ul li.active {
   flex-direction: column;
   align-items: center;
   color: var(--text-color);
-  
+  padding-top: 20vh;
 }
 
 #skills-section{
@@ -261,6 +272,7 @@ nav ul li.active {
 
 #projects-section{
   margin-bottom: 10vh;
+  padding-top: 10vh;
   width: 100vw;
   text-align: center;
 }
@@ -280,7 +292,7 @@ nav ul li.active {
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 5vh;
+  margin: 0vh auto 5vh auto;
   border-left: 7px solid var(--main-color);
   border-right: 7px solid var(--main-color);
   border-radius: 15px;
@@ -362,6 +374,7 @@ nav ul li.active {
 }
 
 #contact-me-section{
+  padding-top: 10vh;
   text-align: center;
 }
 
@@ -445,8 +458,186 @@ nav ul li.active {
   width: 100vw;
   height: 50px;
   margin-top: 200px;
-  color: #000;
+  color: #696969;
   display: flex;
   align-items: center;
   padding-left: 10px;
+  font-weight:300;
+}
+
+.thank-you-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: var(--main-color);
+}
+
+.thank-you-page h1{
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.thank-you-page a{
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin: 20px;
+  background-color: var(--main-color);
+  padding: 10px 50px;
+}
+
+
+@media only screen and (max-width: 720px) {
+  #navbar-section {
+    height: 50px;
+    width: 105vw;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  #intro-section {
+    margin-top: 5vh;
+  }
+  
+  #intro-section .image {
+    height: 90vw;
+    width: 90vw;
+    margin:40px auto 0 auto;
+    position: static;
+  }
+  
+
+  .my-intro {
+    margin: 20px;
+  }
+  
+  .my-intro h2 {
+    font-size: 1.5rem;
+  }
+  
+
+  .my-intro h3 {
+    font-size: 0.9rem;
+  }
+  
+  
+  #about-me-section {
+    padding: 5vh 2vw 0 2vw;
+  }
+
+  
+  
+  .about-me-img{
+    display: none;
+  }
+  .about-me-img-mobile{
+    display: block;
+    height: 80vw;
+    width: 80vw;
+    overflow: hidden;
+    margin: 10px auto;
+    border: 3px solid var(--main-color);
+  }
+  
+  .about-me-img-mobile img{
+    width: 100%;
+  }
+
+  #about-me-section .about-me-para {
+    font-size: 1rem;
+  }
+  
+  #skills-section{
+    margin-bottom: 5vh;
+  }
+  
+  
+  .container{
+    width: 90vw;
+  }
+  
+  .container .skill-box{
+    width:100%;
+    margin: 10px;
+  }
+  
+  #projects-section{
+    margin-bottom: 10vh;
+    padding-top: 5vh;
+    width: 100vw;
+    text-align: center;
+  }
+  
+  .projects-section .container{
+    width: 90vw;
+  }
+  
+  .container .project-box{
+    width: 90%;
+  }
+  
+  
+  #contact-me-section{
+    padding-top: 5vh;
+  }
+  
+  #contact-me-section .container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contacts{
+    width: 100vw;
+  }
+  
+  .contacts .contact{
+    height: 50px;
+  }
+  
+  
+  
+  .contact-me-form{
+    width: 95vw;
+    margin-top: 5vh;
+  }
+  
+  
+  .contact-me-form  input{
+    width: 90%;
+    height: 40px;
+    margin: 1% 0;
+  }
+
+  
+  #footer-section{
+    font-size: 0.8rem;
+    width: 105vw;
+  }
+  
+  .thank-you-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: var(--main-color);
+  }
+  
+  .thank-you-page h1{
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  
+  .thank-you-page a{
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 20px;
+    background-color: var(--main-color);
+    padding: 10px 50px;
+  }
 }

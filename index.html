@@ -14,21 +14,21 @@
 <body>
     <div id="navbar-section">
         <nav>
-            <a href="#" class="logo">Portfolio.</a>
+            <a href="#intro-section" class="logo">Portfolio.</a>
             <ul>
                 <a href="#">
                     <li class="active">Home</li>
                 </a>
-                <a href="#">
+                <a href="#about-me-section">
                     <li>About</li>
                 </a>
-                <a href="#">
+                <a href="#skills-section">
                     <li>Skills</li>
                 </a>
-                <a href="#">
+                <a href="#projects-section">
                     <li>Projects</li>
                 </a>
-                <a href="#">
+                <a href="#contact-me-section">
                     <li>Contact</li>
                 </a>
             </ul>
@@ -41,12 +41,12 @@
             <h2>Hello there, <br> I am <span>Sudarshan Poudel.</span></h2>
             <h3>A tech enthusiast and creative coder.</h3>
             <div class="socials">
-                <a href="facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="facebook.com"><i class="fa-brands fa-instagram"></i></a>
-                <a href="facebook.com"><i class="fa-brands fa-twitter"></i></a>
-                <a href="facebook.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a  href="https://www.facebook.com/profile.php?id=100039022551728"><i class="fa-brands fa-facebook-f"></i></a>
+                <a  href="https://www.instagram.com/spsenpai99/"><i class="fa-brands fa-instagram"></i></a>
+                <a  href="https://twitter.com/Sudarshan_pdl"><i class="fa-brands fa-x-twitter"></i></a>
+                <a  href="https://www.linkedin.com/in/sudarshan-poudel-3971852b8 "><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
-            <a class="down-cv-btn" href="#">Download CV</a>
+            <a class="down-cv-btn" href="Resume.pdf" download="Resume.pdf">Download CV</a>
         </div>
     </div>
 
@@ -54,6 +54,7 @@
         <div class="about-me-img"><img src="images/me2.jpg" alt=""></div>
         <div class="about-me">
             <h2 class="section-heading">About me</h2>
+            <div class="about-me-img-mobile"><img src="images/me2.jpg" alt=""></div>
             <p class="about-me-para">
                 "Hi there! I'm Sudarshan Poudel, a passionate BSc CSIT student from Lumbini ICT Campus. I'm deeply
                 interested in the fusion of programming and machine learning. With a strong background in web
@@ -67,81 +68,54 @@
 
     <div id="skills-section">
         <h2 class="section-heading">Skills</h2>
-        <div class="container">
-            <div class="skill-box">
-                <i class="fa-solid fa-code"></i>
-                <h3>Artificial Intelligence</h3>
-                <p>I'm currently learning Data science, Machine learning and Natural language processing with python.
-                </p>
-            </div>
+        <div id="skill-container" class="container">
             <div class="skill-box">
                 <i class="fa-solid fa-code"></i>
                 <h3>Frontend Devlopment</h3>
                 <p>I've a great experties in HTML, CSS, JavaScript as well good knowledge of frameworks like Tailwind
                     CSS, React Native etc. </p>
             </div>
-            <div class="skill-box">
-                <i class="fa-solid fa-code"></i>
-                <h3>Other Skills</h3>
-                <p>I've a basic knowledge of backend devlopment with PHP and MySQL as well as app devlopment with React
-                    Native</p>
-            </div>
+
+            <!-- Skills will get added by JS -->
         </div>
     </div>
 
     <div id="projects-section">
         <h2 class="section-heading">Projects</h2>
-        <div class="container">
+        <div id="project-container" class="container">
             <div class="project-box">
                 <div class="image"><img src="images/project1.jpeg" alt=""></div>
                 <div class="bg-blur"></div>
                 <h3>Screen Score</h3>
                 <p>Complete Frontend Movie Website.</p>
                 <div class="links">
-                    <a href="#"><i class="fa-solid fa-code"></i></a>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
-            <div class="project-box">
-                <div class="image"><img src="images/project1.jpeg" alt=""></div>
-                <div class="bg-blur"></div>
-                <h3>Screen Score</h3>
-                <p>Complete Frontend Movie Website.</p>
-                <div class="links">
-                    <a href="#"><i class="fa-solid fa-code"></i></a>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
-            <div class="project-box">
-                <div class="image"><img src="images/project1.jpeg" alt=""></div>
-                <div class="bg-blur"></div>
-                <h3>Screen Score</h3>
-                <p>Complete Frontend Movie Website.</p>
-                <div class="links">
-                    <a href="#"><i class="fa-solid fa-code"></i></a>
-                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                    <a  href="#"><i class="fa-solid fa-code"></i></a>
+                    <a  href="#"><i class="fa-solid fa-link"></i></a>
                 </div>
             </div>
         </div>
-        <a class="github-link" href="github">View More <i class="fa-brands fa-github"></i> </a>
+        <a class="github-link"  href="https://github.com/SudarshanPoudel?tab=repositories">View More <i class="fa-brands fa-github"></i> </a>
     </div>
 
     <div id="contact-me-section">
         <h2 class="section-heading">Contact me</h2>
         <div class="container">
             <div class="contacts">
-                <div class="contact"><i class="fa-solid fa-phone"></i> +977 9867231650</div>
-                <div class="contact"><i class="fa-solid fa-envelope"></i> mailto.supo@gmail.com</div>
-                <div class="contact"><i class="fa-brands fa-whatsapp"></i> Whatsapp</div>
-                <div class="contact"><i class="fa-brands fa-telegram"></i> Telegram</div>
+                <a  href="tel:+9779867231650" class="contact"><i class="fa-solid fa-phone"></i> +977 9867231650</a>
+                <a  href="mailto:mailto.supo@gmail.com" class="contact"><i class="fa-solid fa-envelope"></i> mailto.supo@gmail.com</a>
+                <a  href="https://wa.me/9779867231650" class="contact"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+                <a  href="https://t.me/sudarshan66" class="contact"><i class="fa-brands fa-telegram"></i> Telegram</a>
             </div>
-            <form class="contact-me-form" action="">
+            <form class="contact-me-form" action="https://formsubmit.co/mailto.supo@gmail.com" method="POST">
                 <div class="name-mail">
-                    <input type="text" placeholder="Enter Your Name">
-                    <input type="email" placeholder="Enter Your Email">
+                    <input type="text" name="name" required placeholder="Enter Your Name">
+                    <input type="email" name="email" required placeholder="Enter Your Email">
                 </div>
-                <textarea name="" id="" placeholder="Message"></textarea>
-                <button type="submit">Send message</button>
+                <textarea name="message" id="" placeholder="Message" required></textarea>
+                <button type="submit" value="send">Send message</button>
+                <input type="hidden" name="_captcha" value="false">
+                <input id="thank-you-page" type="hidden" name="_next">
+
             </form>
         </div>
     </div>
